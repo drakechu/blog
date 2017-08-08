@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>生活——就是一往无前</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="freehtml5.co" />
+
+	
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body class="single">
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+		<div id="fh5co-aside" style="background-image: url(img/blog/blog_listing.jpg)" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<nav role="navigation">
+				<ul>
+				  <li><a href="index.html"><img data-retina src="img/home_2.ico" alt=""/></a></li>
+			  </ul>
+			</nav>
+			<div class="page-title">
+				<img src="img/user.jpg" alt="">
+				<span>2017.8.1</span>
+				<h2>使用IDM突破百度网盘的速度限制</h2>
+			</div>
+		</div>
+		<div id="fh5co-main-content">
+			<div class="fh5co-post"> 
+				<div class="fh5co-entry padding">
+					<div>
+					  <p> &nbsp; &nbsp; 百度网盘的限制越来越多，超级会员加速2M/s，普通下载100k/s的事情越来越多。本文就分享一种能够不使用云盘下载的方法。</p>
+					  <p>1、下载 chrome 和IDM。（两者均百度搜索就可以。）</p>
+					  <p>2、下载一个tampermonkey for chrome的插件（百度搜索也可以，chrome应用里面搜也可以。）。<br>
+				      </p>
+					  <p>3、装完tampermonkey，点击网址：<a href="https://greasyfork.org/zh-CN/scripts/23635-%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B" target="_blank">tampermonkey</a>
+					  安装一个百度网盘下载助手。</p>
+					  <p>4、17年五月份的时候百度更新了技术导致直接下载这个助手就无法出现下载助手四个字。 </p>
+						<p> 在chrome里面左键tampermonkey的标志点击仪表盘（管理界面），然后右键百度网盘下载助手，会跳转到代码。直接拖拽到490行。</p>
+						<p>将$('div.'+wordMap['default-dom']+'div.'+wordMap['bar']+'div.'+wordMap['list-tools']).append($dropdownbutton); </p>
+						<p>改成
+						  $('div.'+wordMap['list-tools']).append($dropdownbutton);</p>
+						<p>5、安装idm，初次使用IDM，它会教你如何在chrome上使用它。按照图示做就好了。（打开chrome扩展程序管理，在IDM那边选择启用即可。）</p>
+						<p>6、打开百度网盘网页，选中一个文件，点击下载助手，显示链接。然后右键链接选择IDM下载。</p>
+						<p><img src="img/article1/article1_p1.png" alt=""></p>
+					</div>
+				</div>
+				
+				
+
+			</div>
+		</div>
+	</div>
+
+	<div class="fh5co-navigation">
+		<div class="fh5co-cover prev fh5co-cover-sm" style="background-image: url(images/project-4.jpg)">
+			<div class="overlay"></div>
+
+			<a class="copy" href="#">
+				<div class="display-t">
+					<div class="display-tc">
+						<div>
+							<span>上一篇</span>
+							<h2>没了</h2>
+						</div>
+					</div>
+				</div>
+			</a>
+
+		</div>
+		<div class="fh5co-cover next fh5co-cover-sm" style="background-image: url(images/project-5.jpg)">
+			<div class="overlay"></div>
+			<a class="copy" href="#">
+				<div class="display-t">
+					<div class="display-tc">
+						<div>
+							<span>下一篇</span>
+							<h2>How to be an affective web developer</h2>
+						</div>
+					</div>
+				</div>
+			</a>
+
+		</div>
+	</div>
+
+	<footer>
+		<div>
+						
+						2017.8.1 posted on <a href="#" target="_blank">教程</a>  
+					</div>
+				</footer>
+
+	<div class="gototop js-top"><a href="#" class="js-gotop"><em class="icon-arrow-up"></em></a></div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
